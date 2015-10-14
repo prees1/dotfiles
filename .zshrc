@@ -1,17 +1,15 @@
-" Installation {{{
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
-" }}}
 
-" Theme {{{
+# Theme {{{
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="clean"
-" }}}
+# }}}
 
-" Unused Settings {{{
+#  Unused Settings {{{
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -71,31 +69,31 @@ ZSH_THEME="clean"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-" }}}
+# }}}
 
-" Plugins {{{
+#  Plugins {{{
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
-" }}}
+# }}}
 
-" User configuration {{{
+#  User configuration {{{
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
-" }}}
+# }}}
 
-" Key bindings {{{
+# Key bindings {{{
 #set to allow ctrl + arrow keys to work properly
 bindkey ';5D' backward-word
 bindkey ';5C' forward-word
-" }}}
+# }}}
 
-" Aliases {{{
+# Aliases {{{
 alias l='ls'
 alias ll='ls -al'
 
@@ -115,9 +113,9 @@ alias blue='ssh philrees@philreesonline.com'
 function m2() {
 	ssh philr@magarveylab.ca -X -t 'bash .m2login.sh'
 }
-" }}}
+#  }}}
 
-" Functions {{{
+# Functions {{{
 function servers() {
 	echo "Commands to access servers\n\n";
 	echo "mserv   magarvey main server. mservx for X support";
@@ -129,7 +127,7 @@ function servers() {
 	echo "blue    philreesonline.com";
 	echo "amazon  aws vm";
 }
-}}}
+# }}}
 
-"folds this file by markers and sets everything to be folded by default
-" vim:foldmethod=marker:foldlevel=0
+#folds this file by markers and sets everything to be folded by default
+# vim:foldmethod=marker:foldlevel=0
