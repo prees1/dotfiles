@@ -1,14 +1,24 @@
 "Phil Rees - vim config
 "Colour {{{
-colorscheme badwolf "colour scheme
-syntax enable  "enable syntax processing
+colorscheme Chasing_Logic "colour scheme
+syntax on  "enable syntax processing
+
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+
 " }}}
 
 "Spaces & Tabs {{{
-set tabstop=4 "number of visual spaces per TAB char
+set nocompatible
+
+set tabstop=2 "number of visual spaces per TAB char
 set softtabstop=4 "number of spaces for a tab when editting
 set expandtab "convert tab char to spaces
-filetype indent on "load filetype specific indent files
+filetype on "load filetype specific indent files
+filetype indent on
+filetype plugin on
 " }}}
 
 "UI Layout {{{
@@ -18,7 +28,6 @@ set modelines=1
 
 set number "shows line number
 set showcmd "shows recent command in bottom bar
-set cursorline "highlights current line
 " }}}
 
 "Search {{{
@@ -52,7 +61,19 @@ nnoremap gV `[v`]
 "writes a file that requires sudo to modify
 cnoremap sudow w !sudo tee % >/dev/null
 
+"nerdtree map
+map :o :NERDTree<CR>
+
+" shorter switching between windows
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+let mapleader = ","
 " }}}
+
+execute pathogen#infect()
 
 "folds this file by markers and sets everything to be folded by default
 " vim:foldmethod=marker:foldlevel=0
