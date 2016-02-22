@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/prees/git'
+let g:netrw_dirhist_2='/home/prees/git/olive'
+let g:netrw_dirhist_3='/home/prees/git/olive/lib/olive/parts'
+let g:netrw_dirhist_4='/home/prees/olive/lib/olive/parts'
+let g:netrw_dirhist_5='/media/prees/680A-D9CA/magarvey/jars/prism/562665438'
+let g:netrw_dirhist_6='/home/prees/git/metagenomics/mainsite/templates'
