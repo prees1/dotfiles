@@ -96,38 +96,7 @@ bindkey ';5C' forward-word
 # Aliases {{{
 alias l='ls'
 alias ll='ls -al'
-
-alias chat='profanity'
-
-alias mserv='ssh philr@magarveylab.ca'
-alias mservx='ssh philr@magarveylab.ca -X'
-alias mftp='sftp philr@magarveylab.ca'
-#alias m2="ssh philr@magarveylab.ca -t 'bash .m2login.sh'"
-alias m2x='ssh philr@130.113.155.218 -X'
-alias op='gnome-open'
-alias amazon='ssh -i /home/prees/.ssh/amazon.pem ubuntu@ec2-52-27-148-75.us-west-2.compute.amazonaws.com'
-alias cws='ssh compute@magarveylab-ws.mcmaster.ca'
-alias cdev='ssh compute@magarveylab-gw.mcmaster.ca -p 2207'
-alias cmas='ssh compute@magarveylab-gw.mcmaster.ca -p 2208'
-alias blue='ssh philrees@philreesonline.com'
-function m2() {
-	ssh philr@magarveylab.ca -X -t 'bash .m2login.sh'
-}
 #  }}}
-
-# Functions {{{
-function servers() {
-	echo "Commands to access servers\n\n";
-	echo "mserv   magarvey main server. mservx for X support";
-	echo "m2      magarvery 2nd server. m2x for X support";
-	echo "mftp    sftp to main server";
-	echo "cws     cluster web server vm";
-	echo "cdev    cluster dev vm";
-	echo "cmas    cluster master node";
-	echo "blue    philreesonline.com";
-	echo "amazon  aws vm";
-}
-# }}}
 
 #folds this file by markers and sets everything to be folded by default
 # vim:foldmethod=marker:foldlevel=0
